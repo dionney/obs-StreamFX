@@ -757,6 +757,12 @@ if(${PropertyPrefix}ENABLE_ENCODER_FFMPEG)
 		"source/encoders/handlers/nvenc_h264_handler.cpp"
 		"source/encoders/handlers/nvenc_hevc_handler.hpp"
 		"source/encoders/handlers/nvenc_hevc_handler.cpp"
+		"source/encoders/handlers/amf_shared.hpp"
+		"source/encoders/handlers/amf_shared.cpp"
+		"source/encoders/handlers/amf_h264_handler.hpp"
+		"source/encoders/handlers/amf_h264_handler.cpp"
+		"source/encoders/handlers/amf_hevc_handler.hpp"
+		"source/encoders/handlers/amf_hevc_handler.cpp"
 	)
 	list(APPEND PROJECT_LIBRARIES
 		${FFMPEG_LIBRARIES}
