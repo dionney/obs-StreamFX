@@ -26,6 +26,8 @@
 #include "ffmpeg/tools.hpp"
 #include "handlers/amf_h264_handler.hpp"
 #include "handlers/amf_hevc_handler.hpp"
+#include "handlers/vaapi_h264_handler.hpp"
+#include "handlers/vaapi_hevc_handler.hpp"
 #include "handlers/debug_handler.hpp"
 #include "handlers/nvenc_h264_handler.hpp"
 #include "handlers/nvenc_hevc_handler.hpp"
@@ -1119,6 +1121,8 @@ ffmpeg_manager::ffmpeg_manager() : _factories(), _handlers(), _debug_handler()
 	register_handler("hevc_nvenc", ::std::make_shared<handler::nvenc_hevc_handler>());
 	register_handler("h264_amf", ::std::make_shared<handler::amf_h264_handler>());
 	register_handler("hevc_amf", ::std::make_shared<handler::amf_hevc_handler>());
+	register_handler("h264_vaapi", ::std::make_shared<handler::vaapi_h264_handler>());
+	register_handler("hevc_vaapi", ::std::make_shared<handler::vaapi_hevc_handler>());
 }
 
 ffmpeg_manager::~ffmpeg_manager()

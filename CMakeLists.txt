@@ -763,6 +763,12 @@ if(${PropertyPrefix}ENABLE_ENCODER_FFMPEG)
 		"source/encoders/handlers/amf_h264_handler.cpp"
 		"source/encoders/handlers/amf_hevc_handler.hpp"
 		"source/encoders/handlers/amf_hevc_handler.cpp"
+		"source/encoders/handlers/vaapi_shared.hpp"
+		"source/encoders/handlers/vaapi_shared.cpp"
+		"source/encoders/handlers/vaapi_h264_handler.hpp"
+		"source/encoders/handlers/vaapi_h264_handler.cpp"
+		"source/encoders/handlers/vaapi_hevc_handler.hpp"
+		"source/encoders/handlers/vaapi_hevc_handler.cpp"
 	)
 	list(APPEND PROJECT_LIBRARIES
 		${FFMPEG_LIBRARIES}
